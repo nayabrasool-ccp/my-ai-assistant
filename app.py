@@ -18,7 +18,7 @@ if st.button("Ask Assistant"):
         with st.spinner("Thinking..."):
             try:
                 # Using the super fast and smart gemini-2.5-flash model
-                model = genai.GenerativeModel("gemini-2.5-flash")
+                model = genai.GenerativeModel("gemini-3.6-flash")
                 response = model.generate_content(user_input)
                 st.success("Response:")
                 st.write(response.text)
